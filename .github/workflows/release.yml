@@ -77,7 +77,7 @@ jobs:
             latest=${{ github.event_name == 'release' }}
 
       - name: Build and push Docker image for Envoy
-        uses: docker/build-push-action@v3
+        uses: docker/build-push-action@v4
         with:
           context: .
           builder: ${{ steps.buildx.outputs.name }}
