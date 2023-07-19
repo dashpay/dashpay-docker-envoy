@@ -1,4 +1,4 @@
-FROM envoyproxy/envoy:v1.22-latest as builder
+FROM envoyproxy/envoy:v1.22.11
 
 RUN apt update && \
     apt -qq -y install python && \
